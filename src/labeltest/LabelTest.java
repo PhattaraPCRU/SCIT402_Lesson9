@@ -7,7 +7,7 @@ public class LabelTest {
         Font fn = new Font("Courier New", Font.BOLD, 20);
         JFrame f = new JFrame("Label Test");
         JPanel p = new JPanel();
-        Icon ani = new ImageIcon("bee.png");
+        Icon ani = new ImageIcon("src/labeltest/server-icon.png");
         JLabel l1 = new JLabel("Label Test", ani, SwingConstants.CENTER);
         JLabel l2 = new JLabel(ani, SwingConstants.CENTER);
         JLabel l3 = new JLabel("I am JAVA", SwingConstants.CENTER);
@@ -16,10 +16,10 @@ public class LabelTest {
         l2.setFont(fn);
         l3.setFont(fn);
         l4.setFont(fn);
-        l1.setPreferredSize(new Dimension(170, 30));
-        l2.setPreferredSize(new Dimension(170, 30));
-        l3.setPreferredSize(new Dimension(170, 30));
-        l4.setPreferredSize(new Dimension(170, 30));
+        l1.setPreferredSize(new Dimension(450, 30));
+        l2.setPreferredSize(new Dimension(450, 30));
+        l3.setPreferredSize(new Dimension(450, 30));
+        l4.setPreferredSize(new Dimension(450, 30));
         l1.setForeground(Color.BLUE);
         l3.setForeground(Color.BLUE);
         l2.setOpaque(true);
@@ -34,7 +34,7 @@ public class LabelTest {
         p.add(l4);
         f.add(p);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        f.setSize(200, 200);
+        f.setSize(500, 200);
         f.setVisible(true);
     }
 }
